@@ -8,7 +8,7 @@ console.log(`Lista de chamada: ${lista}\n`);
 
 console.log("Exemplo de como funciona:")
 
-animaisDoAquario = ['🐋', '🐙', '🐬', '🦈']
+const animaisDoAquario = ['🐋', '🐙', '🐬', '🦈']
 
 animaisDoAquario.splice(1,0,'🐠')
 animaisDoAquario.splice(3,2,'🐟')
@@ -24,7 +24,7 @@ console.log(`São ${comidas.length} tipos de comidas`)
 console.log(`São comidas gordurosas: ${comidasRuim}`);
 console.log(`São comidas saudáveis: ${comidasBoas}`)
 
-jantarDeHoje = ['🍔', '🌭', '🍕']
+const jantarDeHoje = ['🍔', '🌭', '🍕']
 
 jantarDeHoje.pop()
 jantarDeHoje.pop()
