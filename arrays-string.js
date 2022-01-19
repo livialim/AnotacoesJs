@@ -1,3 +1,7 @@
+//Um array é uma estrutura de dados que segue uma sequência não ordenada.
+//Os elementos ficam em um lugar isolado e o acesso é realizado a partir de índices na primeira posição de cada item.
+//Eles têm a funcionalidade de armazenar uma lista de itens dentro deles e esses itens podem ser de quaisquer formato ou tipo. let myArray = [];
+
 console.log("\n*************************splice****************************")
                  //0     //1     //2      //3  ...
 const lista = ["João", " Ana", " Caio", " Lara", " Marjoire", " Leo"];
