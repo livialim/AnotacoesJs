@@ -39,3 +39,27 @@ function nome (){
 
 }
 
+console.log("**************prototype**************class******************")
+
+function Cliente(nome,cpf,email,saldo){
+    this.nome =nome
+    this.cpf=cpf
+    this.email =email
+    this.saldo=saldo
+    this.depositar = function(valor){
+        this.saldo += valor
+    }
+  }
+  function ClientePoupanca(nome,cpf,email,saldo,saldoPoup)
+  {
+      Cliente.call(this,nome,cpf,email,saldo)
+      this.saldoPoup = saldoPoup
+  }
+  
+  const liz = new ClientePoupanca("Liz","55588844477711","liz@email", 100, 200)
+  
+  ClientePoupanca.prototype.depositarPoup = function(valor){
+      this.saldoPoup += valor
+  }
+  liz.depositarPoup(30)
+  console.table(liz)
